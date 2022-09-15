@@ -1,0 +1,25 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	width: 100%;
+	grid-gap: 10px;
+	height: 100vh;
+}
+
+div {
+	text-align: center;
+	font-size: 32px;
+	background-color: dimgray;
+}
+
+div:nth-child(2n+1) {
+	grid-column: span 4;
+	background-color: black;
+	color: #fff;
+}
+
+div:nth-child(2n) {
+	grid-column: span 4;
+	background-color: white;
+	color: black;
+}
